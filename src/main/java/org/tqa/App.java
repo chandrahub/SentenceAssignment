@@ -7,32 +7,36 @@ package org.tqa;
  */
 public class App 
 {
-    String sentence;
+    private final String sentence;
 
     public App(String sentence) {
         this.sentence = sentence;
     }
 
+    private String[] splitSentence() {
+        return sentence.split(" ");
+    }
+
     public String longestWord() {
-        String[] sarr = sentence.split(" ");
+        String[] strArr = splitSentence();
         int maxIdx = 0;
-        for (int i = 1; i < sarr.length; i++) {
-            if (sarr[i].length() > sarr[maxIdx].length()) {
+        for (int i = 1; i < strArr.length; i++) {
+            if (strArr[i].length() > strArr[maxIdx].length()) {
                 maxIdx = i;
             }
         }
-        return sarr[maxIdx];
+        return strArr[maxIdx];
     }
 
     public String shortestWord() {
-        String[] sarr = sentence.split(" ");
+        String[] strArr = splitSentence();
         int minIdx = 0;
-        for (int i = 1; i < sarr.length; i++) {
-            if (sarr[i].length() < sarr[minIdx].length()) {
+        for (int i = 1; i < strArr.length; i++) {
+            if (strArr[i].length() < strArr[minIdx].length()) {
                 minIdx = i;
             }
         }
-        return sarr[minIdx];
+        return strArr[minIdx];
     }
 
     public int getShortestWordLength() {

@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  */
 public class AppTest
 {
-    private static String sentence = "The cow jumped over the moon.";
+    private static final String sentence = "The cow jumped over the moon.";
 
     @Test
     public void getLongestWordTest()
