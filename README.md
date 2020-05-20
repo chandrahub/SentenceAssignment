@@ -8,6 +8,7 @@ Find longest and shortest words in a sentence and their lengths
 # Usage
 This is a simple Maven application. Download or clone the repo.
 To execute tests: mvn test
+<br>
 To build app: mvn compile
 
 If you want to change the input sentence of the test, you can update the below line in AppTest.java file.
