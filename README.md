@@ -7,6 +7,7 @@ Find longest and shortest words in a sentence and their lengths
 
 # Usage
 This is a simple Maven application. Download or clone the repo.
+<br>
 To execute tests: mvn test
 <br>
 To build app: mvn compile
